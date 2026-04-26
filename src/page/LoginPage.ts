@@ -35,9 +35,4 @@ export default class LoginPage {
     await this.loginBtn.click();
   }
 
-//   async login(user: string, pass: string) {
-//     await this.enterUsername(user);
-//     await this.enterPassword(pass);
-//     await this.clickLogin();
-//   }
 }
