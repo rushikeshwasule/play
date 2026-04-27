@@ -17,9 +17,7 @@ export default class LoginPage {
     this.loginBtn = page.getByRole('button', { name: 'Login' });
   }
 
-  async goto() {
-    await this.page.goto(TestConfig.appUrl);
-  }
+
 
   async enterUsername(user: string) {
     await this.username.click();

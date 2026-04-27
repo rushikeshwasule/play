@@ -7,7 +7,7 @@ export const test = base.extend({
   page: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.goto();
+    await page.goto(TestConfig.appUrl);
     await loginPage.enterUsername(TestConfig.username);
     await loginPage.enterPassword(TestConfig.password);
     await loginPage.clickLogin();
